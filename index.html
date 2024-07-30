@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Avinash Yadav Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Portfolio</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	        
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="round-photo" style="background-image: url('images/IMG_20240521_153124_099.jpg');"></div>
+
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Avinash Yadav</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+							// Initialize the typing animation
+							const typingAnimationElement = document.getElementById('typing-animation');
+						
+							// Create an array of typing text
+							const typingTexts = [
+								'CSE-SE Student @SRMIST ',
+								'Solved 500+ DSA Problems',
+								'Technical and Corporate Enthusiast',
+							];
+						
+							// Create a function to display the typing animation for a given text
+							function playTypingAnimation(text) {
+								// Set the typing speed (milliseconds)
+								const typingSpeed = 110; // Decrease the value to speed up the animation
+						
+								// Loop through each character and add it to the element
+								for (let i = 0; i < text.length; i++) {
+									setTimeout(() => {
+										typingAnimationElement.textContent += text[i];
+									}, i * typingSpeed);
+								}
+						
+								// Once the animation is complete, reset the text and start over
+								setTimeout(() => {
+									typingAnimationElement.textContent = '';
+									playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+								}, text.length * typingSpeed);
+							}
+						
+							// Start the typing animation loop
+							playTypingAnimation(typingTexts[0]);
+						</script>
+						
+
+						<br>
+						<br>
+			            <h2>Software Developer</h2>
+						<p><a href="https://www.linkedin.com/in/avinashyadav03/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/avinashyadavofficial" class="btn btn-primary py-3 px-4">Projects</a>
+							<a href="https://drive.google.com/file/d/1nKbgQysqbnDVXMP_zYHg5v-Q2nemPTEw/view?usp=sharing" class="btn btn-primary py-3 px-4">Resume</a>
+						   
+							
+							
+						
+						</p>
+						<p><a href="https://codolio.com/profile/avinashyadavofficial" class="btn btn-primary py-3 px-4" >DSA Problems Solved</a>
+							<a href="https://topmate.io/avinashyadavofficial/" class="btn btn-primary py-3 px-4">Connect 1:1</a></p>
+			           
+		            </div>
+					
+		          </div>
+				  
+	        	</div>
+				
+	        </div>
+			
+	      </div>
+		  
+		</div>
+		
+    </section>
+   <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+	
+  <div class="container">
+    <div class="row d-md-flex align-items-center">
+      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18">
+          <div class="text">
+            <strong class="number" data-number="500">0 <span>+</span></strong>
+            <span> Problems Solved</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18">
+          <div class="text">
+            <strong class="number" data-number="15">0</strong>
+            <span>Projects</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18">
+          <div class="text">
+            <strong class="number" data-number="200">0</strong>
+            <span>Mentored Interns</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18">
+          <div class="text">
+            <strong class="number" data-number="3">0</strong>
+            <span>Internship Experiences</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	  
+		
+<section class="ftco-about img ftco-section ftco-no-pb text-white" id="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-5 d-flex">
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay">
+                            <div class="row">
+                                
+                                <div class="col-sm-6 col-md-7">
+                                    <div class="about-info">
+                                        <!-- Tab Buttons -->
+                                        <div class="tabs">
+                                            <div class="tab-button active" data-target="skills">Skills</div>
+                                            <div class="tab-button" data-target="education">Education</div>
+                                            <div class="tab-button" data-target="internships">Internships</div>
+                                            <div class="tab-button" data-target="certifications">Certifications</div>
+                                            
+                                        </div>
+                                        <!-- Tab Contents -->
+                                        <div class="tab-content" id="skills">
+                                            <ul class="list-disc">
+                                                <li> <b>Tech Stack : </b>Java, C++/C, Python, HTML, CSS, JavaScript, Mysql, sqlite</li>
+                                                <li> <b>Developer Tools :</b> VSCode, Jupyter Notebook, Git, GitHub, MYSQL Workbench, Terminal, Command Prompt, PowerShell</li>
+                                                <li> <b>Relevant Coursework :</b> Data Structures and Algorithms,Computer Networks, Operating Systems, Database Management
+													Systems, Object-Oriented Programming.</li>
+                                                
+												
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="education" style="display:none;">
+                                            <ul class="list-disc">
+                                                <li><p>2018-2019</p>Grade 10th-VidyaGyan School,Sitapur,Uttar Pradesh <b><i>(Percentage-97%)</i></b></li>
+                                                <li><p>2020-2021</p>Grade 12th-VidyaGyan School,Sitapur,Uttar Pradesh<b><i>(Percentage-94.2%)</i></b></li>
+                                                <li><p>2021-2025</p>BTech,CSE-SE - SRMIST, Chennai<i><b>(CGPA-9.63)</b></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="internships" style="display:none;">
+                                            <ul class="list-disc">
+                                
+                                                <li>Research Intern - SAMSUNG PRISM</li>
+                                                <li>AI-ML Virtual Intern - AWS Academy</li>
+												<li>Team Head - TechAnalogy</li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="certifications" style="display:none;">
+                                            <ul class="list-disc">
+                                                <li> Oracle - Oracle Cloud Infrastructure 2024 Generative AI Certified Professional.</li>
+                                                <li>NPTEL - Programming in modern C++</li>
+                                                <li>ServiceNow - Successfully completed certification requirements for Micro-Certification- Welcome to ServiceNow</li>
+                                                
+                                            </ul>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h1 class="big">About</h1>
+                            <h2 class="mb-4">About Me</h2>
+                            <p>Currently pursuing a B.Tech in Computer Science and Engineering at SRM Institute of Science and Technology with a <b>CGPA of 9.63.</b> Experience includes a research internship at Samsung Prism, focusing on LLM customization for sales chatbots, and a virtual AI/ML internship at AWS Academy. As Team Head at Tech Analogy, successfully increased revenue by 40% and mentored over 200 interns. Proficient in Java, Python, and C++, with a strong focus on problem-solving and innovation. Love handling problem solving questions and have solved over 500+ DSA problems. Open to discussing new tech solutions and collaborative projects.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab-button");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                const target = tab.dataset.target;
+
+                tabs.forEach(t => t.classList.remove("active"));
+                tabContents.forEach(tc => tc.style.display = "none");
+
+                tab.classList.add("active");
+                document.getElementById(target).style.display = "block";
+            });
+        });
+
+        // Show default tab
+        document.querySelector(".tab-button.active").click();
+    });
+</script>
+
+
+
+
+	
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/prism.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href=""> Sales Chatbot for Samsung Products</a></h3>
+                <p> • Developed a tailored sales chatbot with a custom Large Language Model incorporating domain-specific knowledge.</p>
+				<p>• Engineered an intuitive sales chat application using natural language processing to provide personalized
+					recommendations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/avinashglobalhospital.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Avinash Global Hospitals Management</a></h3>
+                <p> • Developed a Hospital Management System with secure patient, doctor, and admin logins.</p>
+				<p>• Integrated key medical services and features, enhancing operational efficiency and user experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/taskkart.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">TaskKart</a></h3>
+                <p>• Designed web-based task manager for organizing tasks in different categories, with dark mode support.</p>
+				<p>• Enhanced productivity and organization by allowing users to add, complete, and manage tasks efficiently, with persistent storage and a user-friendly interface.</p>
+              </div>
+            </div>
+          </div>
+		  
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="" class="block-20 zoom-effect" style="background-image: url('images/budgetbook.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="">BudgetBook</a></h3>
+				  <p>• Problem Statement: High costs of buying new or second-hand books make reading unaffordable for many people.</p>
+					<p>• Solution: An online platform offering affordable daily rentals of eBooks, allowing users to read books at a fraction of
+					purchase price.</p>
+					<p>• Outcomes: Increased access to books, cost savings for readers, and promotion of efficient reading habits.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="" class="block-20 zoom-effect" style="background-image: url('images/Portfolio.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="">Portfolio</a></h3>
+				  <p>• Created a personal portfolio website showcasing projects and skills.</p>
+				  <p>• Enhanced user experience with an interactive and visually appealing design.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+91 6391532703">+91 6391532703</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:avinashyadav2703@gmail.com">avinashyadav2703@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1nKbgQysqbnDVXMP_zYHg5v-Q2nemPTEw/view?usp=sharing">ResumeLink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/zxR7reFJ3aGgv3mH9" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/avinashyadav03/"><span class="icon-linkedin"></span></a></li>  
+
+					  <li class="ftco-animate"><a href="https://twitter.com"><span class="icon-twitter"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="https://www.linkedin.com/in/avinashyadav03/" target="_blank">Avinash Yadav</a>.All rights reserved.
+	</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
